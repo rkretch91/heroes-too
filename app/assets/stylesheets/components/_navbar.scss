@@ -12,7 +12,17 @@
 
 /* Logo */
 .navbar-wagon-brand img {
-  height: 50px;
+  height: 150px;
+  position: relative;
+  top: 50px;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-wagon-brand img {
+        height: 100px;
+        top: 30px;
+    }
 }
 
 /* User Avatar */
@@ -33,6 +43,11 @@
 .navbar-wagon-item {
   cursor: pointer;
   padding: 0 20px;
+  border-right: 1px solid gray;
+}
+
+.navbar-wagon-item:last-child {
+  border-right: none;
 }
 
 /* Navbar link */
