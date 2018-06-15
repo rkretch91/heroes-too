@@ -43,7 +43,7 @@
 .navbar-wagon-item {
   cursor: pointer;
   padding: 0 20px;
-  border-right: 1px solid gray;
+  border-right: .5px solid rgba(0, 0, 0, .4);
 }
 
 .navbar-wagon-item:last-child {
@@ -52,11 +52,11 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color: #4886c1;
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: #999999;
   text-decoration: none;
 }
 
@@ -89,4 +89,11 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.btn-translation {
+  position: absolute;
+  right: -6px;
+  font-size: 13px;
+  border-radius: 20%;
 }
