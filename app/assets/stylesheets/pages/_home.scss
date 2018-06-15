@@ -1,1 +1,50 @@
-// Specific CSS for your home-page
+.ecopledge-explanation {
+  background: #4886c1;
+  text-align: center;
+  color: white;
+  h2 {
+    padding-top: 60px;
+    margin-top: 0px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.1;
+  }
+}
+
+.ecopledge-text {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.ecopledge-content {
+  padding-bottom: 50px;
+  img {
+    height: 100px;
+  }
+  h4 {
+    font-weight: bold;
+  }
+}
+
+.ecopledge-cta {
+  padding-bottom: 60px
+}
+
+.btn-success {
+  border-radius: 5px !important;
+}
+
+.banner-two {
+  color: white;
+  h2 {
+    padding-top: 60px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
