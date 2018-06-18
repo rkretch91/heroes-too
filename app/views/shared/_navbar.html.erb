@@ -11,8 +11,8 @@
 
       <!-- Links when logged in -->
       <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "About", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Get Involved", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "About", about_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "What We Do", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Contact Us", "#", class: "navbar-wagon-item navbar-wagon-link" %>
 
 
@@ -43,8 +43,8 @@
     <% else %>
       <!-- Login link (when logged out) -->
       <%= link_to "Home", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "About", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Get Involved", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "About", about_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "What We Do", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Contact Us", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
       <button type="button" class="btn btn-primary btn-translation">中</button>
