@@ -1,0 +1,106 @@
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.4) 0%, rgba(0,36,61,0.4) 50%), url('<%= image_path "architecture-buildings-smog.jpg" %>');">
+  <div class="banner-content">
+    <h1>What HeroesToo Does</h1>
+  </div>
+</div>
+<div class="heroestoo-programs">
+  <h2 style="text-align: center; color: white;">Our Programs</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <div class="card-two">
+        <div class="card-two-contents">
+          <div class="card-two-image">
+            <%= image_tag "leaves.jpg" %>
+          </div>
+          <div class="card-two-title">
+            <span><h3>HeroesToo EcoPledge Education Program</h3></span>
+          </div>
+          <div class="card-two-description">
+            <span><p>We visit school, colleges, and universities providing eco-education and environmental awareness workshops.</p></span>
+          </div>
+          <div class="card-two-readmore">
+            <span id="ht-education-program"><a href="#program-info">READ MORE</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <div class="card-two">
+        <div class="card-two-contents">
+            <div class="card-two-image">
+              <%= image_tag "citrus.jpg" %>
+            </div>
+            <div class="card-two-title">
+              <span><h3>HeroesToo EcoPledge</h3></span>
+            </div>
+            <div class="card-two-description" style="top: 255px;">
+              <span><p>Our unique and successful, tool to restore and preserve our environment through encouraging each and every individual to be aware of their habits and reduce their resource consumption.</p></span>
+            </div>
+            <div class="card-two-readmore">
+              <span id="ht-ecopledge-program"><a href="#program-info">READ MORE</a></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <div class="card-two">
+        <div class="card-two-contents">
+          <div class="card-two-image">
+            <%= image_tag "art-hand.jpg" %>
+          </div>
+          <div class="card-two-title">
+            <span><h3>HeroesToo Reforestation Program</h3></span>
+          </div>
+          <div class="card-two-description">
+            <span><p>Our tree-planting program was initiated on 27th July 2010.</p></span>
+          </div>
+          <div class="card-two-readmore">
+            <span id="ht-reforestation-program"><a href="#program-info">READ MORE</a></span>
+          </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <div class="card-two">
+        <div class="card-two-contents">
+          <div class="card-two-image">
+            <%= image_tag "straws.jpg" %>
+          </div>
+          <div class="card-two-title">
+            <span><h3>Other Programs</h3></span>
+          </div>
+          <div class="card-two-description">
+            <span><p>Throughout the years we have come up with plenty of other programs to improve the environment.</p></span>
+          </div>
+          <div class="card-two-readmore">
+            <span id="ht-other-programs"><a href="#program-info">READ MORE</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="program-info" id="program-info" style="color: white; width: 70%; margin: 0 auto;">
+  </div>
+</div>
+
+<script>
+  document.querySelector("#ht-education-program").addEventListener("mouseup", function() {
+    let programExplanation = document.querySelector(".program-info")
+    programExplanation.innerHTML = "<br><h3 style='text-align: center;'>HeroesToo EcoPledge Education Program</h3> <p>HeroesToo visits school, colleges, and universities providing eco-education and environmental awareness workshops.</p><p>Four tier approach engaging students to participate in EcoPledge workshops to learn how human activities have impacted and damaged our world, and to take action on solutions to live a sustainable lifestyle.</p><p>The program culminates with the school itself taking the EcoPledge and reduce their carbon footprint to improve  environmental sustainability and reducing resource consumption by hands-on involvement in a sustainable living project.</p><p>In the EcoPledge Program, schools are able to reduce 5% or more of their yearly energy usage and paper costs.</p><p>In 2013 HeroesToo created the EcoPledge Program, a powerful grassroots education process providing eco-education and encouragement to commit to a behavioral change towards a reduction of one’s carbon footprint.</p><p>The EcoPledge Program aims to create a globally connected network of schools and communities for world change.</p><br><h4 style='text-align: center;'>The EcoPledge</h4><p>The EcoPledge is a personal, quantifiable commitment made by individuals, schools, institutions and corporate entities to reduce their negative impact on the environment by making a quantifiable promise to save on one or more of the earth’s resources thereby reducing their carbon footprint.</p><p>HeroesToo believes each individual action when combined with community action will create the synergy to have a tangible effect on the environmental damage created and the eco-friendly behavior will create habits over time to produce a more sustainable lifestyle.</p><p>By supporting the EcoPledge Program, companies have a better insight and understanding of the true meaning of CSR, reduce their own resource usage and provide financial support to fund the school programme whilst gaining valuable brand exposure for a great and meaningful cause that has a direct impact on the world we live in.</p>"
+  });
+
+  document.querySelector("#ht-ecopledge-program").addEventListener("mouseup", function() {
+    let programExplanation = document.querySelector(".program-info")
+    programExplanation.innerHTML = "<br><h3 style='text-align: center;'>HeroesToo EcoPledge</h3><p>This is our unique and successful, tool to restore and preserve our environment through encouraging each and every individual to be aware of their habits and reduce their resource consumption.</p><p>Through the HeroesToo EcoPledge, we engage individuals to make a commitment: a pledge to physically decrease their resource consumption, thereby reducing their carbon footprint.</p><p>Our inspirational HeroesToo EcoPledge is for individuals to take a pledge to make an immediate positive change to save one or more of the earth’s resources.</p><p>Our EcoPledge App motivates and awards the continuation of this eco-friendly action thereby making it a habit. The option of sharing this, enabling connection with others and providing awards for the successful achievement further inspires and motivates individuals to spread the message to their social network to take action and within the community and thereby globally, so more and more people will be involved in leading a sustainable lifestyle.</p><button type='button' class='btn btn-success btn-lg' style='text-align: center;'>Take the EcoPledge</button>"
+  });
+
+  document.querySelector("#ht-reforestation-program").addEventListener("mouseup", function() {
+    let programExplanation = document.querySelector(".program-info")
+    programExplanation.innerHTML = "<br><h3 style='text-align: center;'>HeroesToo Reforestation Program</h3><p>Our tree-planting program was initiated on 27th July 2010. HeroesToo Foundation operated the HeroesToo Reforestation and Forest Protection Programme in collaboration with the Guangdong Academy of Forestry in Lashi Village.</p><p>The reforestation site, Vashi Village, covers an initial 160 hectares and we planted 21,500 saplings of 59 different species. The programme is not just about the benefit of having trees, but the people too – the reforestation programme creates jobs for the villagers and provides an invaluable source of income for them.</p><p>21,500 sapling trees of 59 different species were planted on 160 hectares of land. As a result of this reforestation, villagers were equipped with new skills and more importantly, a trade that would earn them money.</p>"
+  });
+
+   document.querySelector("#ht-other-programs").addEventListener("mouseup", function() {
+    let programExplanation = document.querySelector(".program-info")
+    programExplanation.innerHTML = "<br><h3 style='text-align: center;'>Other HeroesToo Programs</h3><br><h4 style='text-align: center;'>Education in Universities</h4><p>HeroesToo has been active in schools and universities since its inception.</p><p>HeroesToo initiated the Sustainable Design Competitions (SDC), a competition in sustainable living and engaging the next generation. Our aim is to educate the future generation about the harmful effects of current production and consumer cultures and how to think in sustainability terms empowering them to be agents for positive change and fueling true innovation.</p><br><h4 style='text-align: center;'>HeroesToo EcoDesign Competitions</h4><p>HeroesToo Foundation in collaboration with our social enterprise partner, SolutionsToo Ltd., launched a series of Sustainable Design Competitions (SDC). The aim of the competitions was to encourage talented artists to incorporate sustainability into their designs as well as spreading this message to the community.</p><br><h4 style='text-align: center;'>Sustainable Design Competition - Bus Shelter</h4><p>Bus shelters are part of Hong Kong’s intricate transportation system and they are impossible to miss. This is why we chose bus shelters to be apart of our sustainable design competition. The purpose of the competition was to incorporate (without comprising on style) a design that would both serve as an urban landscape icon and a billboard for environmental issues.</p><p>The bus shelter SDC attracted students from several major academic institutions and received nearly a hundred entries. A number of those entries were from design students from universities, and we were surprised to find out that our SDC had become a newly delegated part of their syllabus. The competition also gained major support from the Hong Kong Jockey Club and Kowloon Motor Bus Company who even dedicated a couple of their shelters to the winning designs.</p><p>Participants of this competition were invited to visit Hong Kong Jockey Club’s facilities including the Beas River Country Club and the Shatin horse stable. We held workshops during the competition which allowed students to receive a first-hand look at how architects designed prototypes for companies with the theme, of course, being sustainability.</p><p>12 finalist were chosen out of the 71 entries, where the finalist made a model to represent their idea and presented the model to our panel of judges at our closing ceremony. Team TPA from ChuHai College of Higher Education was announced champion of this competition. The models were exhibited in Central Oasis where the community can gain an understanding of the concept behind the finalist’s work.</p><br><h4 style='text-align: center;'>Sustainable Design Competition - Rain Jacket</h4><p>HeroesToo Foundation launched The Sustainable Design Competition in 2010 to promote sustainable living through eco-friendly lifestyle products.</p><p>The aim of the series’ first challenge was to find talented Hong Kong designers who have ambitions of creating a fashion business with sustainable materials and being at the forefront of the ever-changing fashion industry through the development of low carbon clothing.</p><p>Aspiring youngsters were asked to submit individual or team designs of a portable rain jacket using recycled materials, with entry open to all local tertiary students. 9 finalists emerged from over 60 submissions – they were given materials to realize their designs and invited to a workshop where industry professionals shared their expertise on different facets of sustainable fashion, from fabrics to entrepreneurship.</p><p>The finalists’ designs were showcased at the competition’s grand finale on 1st June before renowned designers and various media outlets. After several rounds of discussions, the panel of judges (of which Mr. Walter Ma was a member) declared Kerry Chong Chui Yi from Hong Kong Polytechnic University as the winner, with Derek Chan Chun Kit and Tristan Yeung Man Fung placed first and second runners-up respectively, whilst the People’s Choice Award went to Natalie Wong S.T. Sadik. In addition to having her design produced for retail, Kerry also takes away a cash prize of $10,000.</p><p>“Fashion is and will continue to be, an integral part of our young people’s lives. By raising awareness of the need for sustainable clothing, not only can we encourage youngsters to become more conscientious consumers, but also make a push for environmentally responsible production. The Sustainable Design Competition Series will propel this concept across other aspects of our lifestyle, making it a competition with real-world outcomes,” says Mr. Raymond Yap, Founder of Heroes2.</p>"
+  });
+</script>
