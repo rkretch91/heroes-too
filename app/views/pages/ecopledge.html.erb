@@ -4,7 +4,7 @@
       <div class="ecopledge-content" style="padding: 0 30px;">
         <%= image_tag "ecopledge-platform-04-04.png" %>
         <h2>EcoPledge Individual</h2>
-        <p>The Ecopledge Collective platform is for organizations and schools that are looking to cut down their environmental footprint.</p><br><p>Participating entities can make an EcoPledge and track their progress monthly.</p>
+        <p>The Ecopledge Individual platform is for students or anyone looking to track and change their impact on the environment.</p><br><p>You can see how much impact even purchasing one plastic is on the environment and compete with friends.</p>
       </div>
     </div>
     <div class="col-xs-12 col-md-6 ecopledge-collective">
@@ -24,7 +24,8 @@
           <%= f.error_notification %>
 
           <div class="form-inputs">
-            <%= f.input :organization, required: true %>
+            <%= f.input :type, required: true, collection: ["Collective", "Individual"], input_html: { class: "form-control" }  %>
+            <%= f.input :name, required: true, label: "Name, School Name, or Organization Name" %>
             <%= f.input :email, required: true, autofocus: true %>
             <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
             <%= f.input :password_confirmation, required: true %>
