@@ -5,5 +5,6 @@ Rails.application.routes.draw do
    get '/about', to: 'pages#about'
    get '/whatwedo', to: 'pages#wwd'
    get '/ecopledge', to: 'pages#ecopledge'
+   get '/contact-us', to: 'pages#contact'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

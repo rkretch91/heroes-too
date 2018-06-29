@@ -5,32 +5,32 @@
   </div>
   <div class="footer-links">
     <div class="abt-links">
-      <h5>About</h5>
-      <p><a href="#">HeroesToo</a></p>
-      <p><a href="#">FAQ</a></p>
-      <p><a href="#">Team</a></p>
-      <p><a href="#">Past Programs</a></p>
+      <h5 style='padding: 0 20px !important;'>About</h5>
+      <p><a><%= link_to "HeroesToo", about_path, class: "navbar-wagon-item navbar-wagon-link" %></a></p>
+      <p><a><%= link_to "FAQ", about_path, class: "navbar-wagon-item navbar-wagon-link" %></a></p>
+      <p><a><%= link_to "Team", about_path, class: "navbar-wagon-item navbar-wagon-link" %></a></p>
+      <p><a><%= link_to "Past Programs", whatwedo_path, class: "navbar-wagon-item navbar-wagon-link" %></a></p>
     </div>
     <div class="abt-links">
-      <h5>Get Involved</h5>
-      <p><a href="#">Take the EcoPledge</a></p>
-      <p><a href="#">Our Programs</a></p>
-      <p><a href="#">Volunteer</a></p>
-      <p><a href="#">Sponsor Us</a></p>
-      <button type="button" class="btn btn-primary btn-xs">Donate</button>
+      <h5 style='padding: 0 20px !important;'>Get Involved</h5>
+      <p><%= link_to "Take the EcoPledge", ecopledge_path, class: "navbar-wagon-item navbar-wagon-link" %></p>
+      <p><a><%= link_to "Our Programs", whatwedo_path, class: "navbar-wagon-item navbar-wagon-link" %></a></p>
+      <p><a><%= link_to "Volunteer", contact_us_path, class: "navbar-wagon-item navbar-wagon-link" %></a></p>
+      <p><a><%= link_to "Sponsor Us", contact_us_path, class: "navbar-wagon-item navbar-wagon-link" %></a></p>
+      <%= link_to '<button style="margin: 0 20px; type="button" class="btn btn-primary btn-xs">Donate</button>'.html_safe, contact_us_path %>
     </div>
   </div>
   <div class="map-social-icons">
     <%= image_tag "map-placeholder.jpg", height: 100 %>
     <p><i class="fas fa-map-marker"></i> Harvest Building, 29 – 35 Wing Kut Street, Central, Hong Kong</p>
-    <p><i class="fas fa-envelope"></i> info@heroestoo.com</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:info@heroestoo.com">info@heroestoo.com</a></p>
     <p><i class="fas fa-phone"></i> +852 24610208</p>
     <hr style="border-color: rgba(0, 0, 0, .3);">
     <ul class="social-media">
-      <li><i class="fab fa-facebook-square"></i></li>
-      <li><i class="fab fa-twitter-square"></i></li>
-      <li><i class="fab fa-youtube-square"></i></li>
-      <li><i class="fab fa-linkedin"></i></li>
+      <li><a href="https://www.facebook.com/heroestoo"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="https://twitter.com/heroestoo"><i class="fab fa-twitter-square"></i></a></li>
+      <li><a href="https://www.youtube.com/user/Heroes2HK"><i class="fab fa-youtube-square"></i></a></li>
+      <li><a href="https://www.linkedin.com/groups/HeroesToo"><i class="fab fa-linkedin"></i></a></li>
     </ul>
   </div>
 </div>
