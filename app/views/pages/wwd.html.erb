@@ -1,8 +1,3 @@
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.4) 0%, rgba(0,36,61,0.4) 50%), url('<%= image_path "architecture-buildings-smog.jpg" %>');">
-  <div class="banner-content">
-    <h1>What HeroesToo Does</h1>
-  </div>
-</div>
 <div class="heroestoo-programs">
   <h2 style="text-align: center; color: white;">Our Programs</h2>
   <div class="row">
@@ -52,7 +47,7 @@
             <span><h3>HeroesToo Reforestation Program</h3></span>
           </div>
           <div class="card-two-description">
-            <span><p>Our tree-planting program was initiated on 27th July 2010.</p></span>
+            <span><p>Our tree-planting program was initiated on the 27th of July 2010.</p></span>
           </div>
           <div class="card-two-readmore">
             <span id="ht-reforestation-program"><a href="#program-info">READ MORE</a></span>
@@ -81,6 +76,9 @@
   </div>
   <div class="program-info" id="program-info" style="color: white; width: 70%; margin: 0 auto;">
   </div>
+  <div style="display: flex; justify-content: center; align-items: center; padding-top: 50px;">
+  <%= link_to '<button type="button" class="btn btn-success btn-lg">Take the EcoPledge</button>'.html_safe, ecopledge_path %>
+  </div>
 </div>
 
 <script>
@@ -91,7 +89,7 @@
 
   document.querySelector("#ht-ecopledge-program").addEventListener("mouseup", function() {
     let programExplanation = document.querySelector(".program-info")
-    programExplanation.innerHTML = "<br><h3 style='text-align: center;'>HeroesToo EcoPledge</h3><p>This is our unique and successful, tool to restore and preserve our environment through encouraging each and every individual to be aware of their habits and reduce their resource consumption.</p><p>Through the HeroesToo EcoPledge, we engage individuals to make a commitment: a pledge to physically decrease their resource consumption, thereby reducing their carbon footprint.</p><p>Our inspirational HeroesToo EcoPledge is for individuals to take a pledge to make an immediate positive change to save one or more of the earth’s resources.</p><p>Our EcoPledge App motivates and awards the continuation of this eco-friendly action thereby making it a habit. The option of sharing this, enabling connection with others and providing awards for the successful achievement further inspires and motivates individuals to spread the message to their social network to take action and within the community and thereby globally, so more and more people will be involved in leading a sustainable lifestyle.</p><button type='button' class='btn btn-success btn-lg' style='text-align: center;'>Take the EcoPledge</button>"
+    programExplanation.innerHTML = "<br><h3 style='text-align: center;'>HeroesToo EcoPledge</h3><p>This is our unique and successful, tool to restore and preserve our environment through encouraging each and every individual to be aware of their habits and reduce their resource consumption.</p><p>Through the HeroesToo EcoPledge, we engage individuals to make a commitment: a pledge to physically decrease their resource consumption, thereby reducing their carbon footprint.</p><p>Our inspirational HeroesToo EcoPledge is for individuals to take a pledge to make an immediate positive change to save one or more of the earth’s resources.</p><p>Our EcoPledge App motivates and awards the continuation of this eco-friendly action thereby making it a habit. The option of sharing this, enabling connection with others and providing awards for the successful achievement further inspires and motivates individuals to spread the message to their social network to take action and within the community and thereby globally, so more and more people will be involved in leading a sustainable lifestyle.</p>"
   });
 
   document.querySelector("#ht-reforestation-program").addEventListener("mouseup", function() {

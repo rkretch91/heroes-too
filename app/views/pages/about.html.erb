@@ -26,7 +26,7 @@
         <li><a href="#content-top" style="color:lightgray; font-size: 18px;" id="about-us">About Us</a></li>
         <li><a href="#content-top" style="color:lightgray; font-size: 18px;" id="our-team">Our Team</a></li>
         <li><a href="#content-top" style="color:lightgray; font-size: 18px;" id="ambassadors">Our Ambassadors</a></li>
-        <li><a href="#content-top" style="color:lightgray; font-size: 18px;">Contact Us</a></li>
+        <li><a href="#content-top" style="color:lightgray; font-size: 18px;" id="contact">Contact Us</a></li>
       </ul>
       <h5 style="text-align: center; padding-top: 60px;">Help us to keep growing!</h5>
       <button type="button" class="btn btn-sm btn-involved" style="position: static !important; color: #4886c1; display: block; margin: 0 auto;">Donate</button>
@@ -48,6 +48,11 @@
   document.querySelector("#ambassadors").addEventListener("mouseup", function() {
     let ourTeam = document.querySelector(".about-explanation")
     ourTeam.innerHTML = "<h3 {text-align: center;}>Our Ambassadors</h3> <p><b>Winnie Young</b><p>Former Miss Hong Kong (1995), actress, and founder of Discovery Learning Academy. Known for her 15-year career as a television presenter and often conducts parenting and reading seminars for parents. Ambassador for HeroesToo Sustainable Bus Shelter Design Competition. Ms. Young is also involved in other charities including Bring Me a Book Hong Kong, Women Helping Women, Benji’s Centre and is a past president of Wai Yin Association.</p>"
+  });
+
+  document.querySelector("#contact").addEventListener("mouseup", function() {
+    let ourTeam = document.querySelector(".about-explanation")
+    ourTeam.innerHTML = "<h3 {text-align: center;}>Contact Us</h3><br><h4>Hong Kong Headquarters & Office Address<h4><p>Telephone number: +852 24610208</p><br><p>E-mail (for general inquiries):<a style= 'color: white;' href='mailto:raymond@heroestoo.com'> raymond@heroestoo.com</a></p>"
   });
 </script>
 
