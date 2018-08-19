@@ -1,5 +1,5 @@
 .about-body {
-  background: #4886c1;
+  background: #66CCFF;
   color: white;
   padding-top: 60px;
   h3 {
@@ -15,6 +15,24 @@
   margin: 30px 20px;
   // display: flex;
   font-size: 15px;
+}
+
+.about-images {
+  display: flex;
+  // justify-content: space-between;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin: auto;
+  img {
+    height: 100px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+.about-images img {
+  height: 50px;
+  }
 }
 
 .about-body {
