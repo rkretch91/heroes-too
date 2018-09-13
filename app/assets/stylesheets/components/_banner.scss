@@ -32,3 +32,11 @@
     opacity: .5;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .call-to-action-banner {
+
+  display: none;
+
+}
+}
