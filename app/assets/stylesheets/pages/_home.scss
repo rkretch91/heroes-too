@@ -32,6 +32,30 @@ body {
   }
 }
 
+.news-events {
+  padding-bottom: 50px;
+  img {
+    height: auto;
+    width: 80%;
+  }
+  img:hover{
+    color: #424242;
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.10);
+  -ms-transform: scale(1.10); /* IE 9 */
+  -webkit-transform: scale(1.10); /* Safari and Chrome */
+
+}
+  h4 {
+    font-weight: bold;
+  }
+}
+
 @media screen and (max-width: 1000px) {
 .ecopledge-content {
   display: none;
